@@ -27,44 +27,86 @@ public class ArcubError {
             System.out.println("فاصله liftsense را بررسی نمایید.");
             System.out.println("آهنربای مربوط به liftsense را بررسی نمایید.");
             System.out.println("بررسی کنید کابین حرکت می کتد.");
-            System.out.println("");
-
         }
         if (x == 3) {
             System.out.println("H3: DOOR IS NOT CLOSED FOR A LONG TIME  ");
             System.out.println("درب برای مدت طولانی بسته نشده است");
+            System.out.println("------------------------------------------");
+            System.out.println("پارامتر 7.8 را بررسی کنید.");
+            System.out.println("سیکنال 140 مدار ایمنی را بررسی نمایید.");
+            System.out.println("تراول ها مربوط به 135 و 140 را بررسی نمایید.");
+            System.out.println("کنتاکت درب کابین را بررسی کنید.");
+            System.out.println("این خطا در صورت تنظیم صحیح به خطای H1 مربوط می شود");
         }
         if (x == 4) {
             System.out.println("H4: CAR CANT HOLD. PLEASE CHECK THE MOTOR PARAMETER");
             System.out.println("موتور نمی تواند کابین را نگه دارد");
+            System.out.println("-----------------------------------------------------");
+            System.out.println("پارامترهای موتور بررسی شود که با پلاک موتور همخوانی داشته باشد.");
+            System.out.println("کوپل انکودر بررسی گردد.");
         }
         if (x == 5) {
             System.out.println("H5: BOTH LIMIT SWITCHES UP&DOWN ARE OPEN  ");
             System.out.println("دور انداز اجبار بالا و پایین (817 و 818) همزمان قطع شده اند");
+            System.out.println("--------------------------------------------------------------");
+            System.out.println("سنسور 817 و 818 را بررسی نمایید.");
+            System.out.println("فاصله آهنربای قطع و وصل را بررسی نمایید.");
+            System.out.println("تراول کابل مرتبط را بررسی نمایید.");
         }
         if (x == 6) {
             System.out.println("H6: TOP LIMIT SWITCH CUTS OFF WHIL RUNNING DOWN  ");
             System.out.println("سنسور دورانداز بالا (818) در حین حرکت کابین به سمت پایین قطع شده است");
+            System.out.println("---------------------------------------------------------------------");
+            System.out.println("آهنربای قطع و وصل سنسور 818 را بررسی نمایید.");
+            System.out.println("تراول کابل مرتبط را بررسی نمایید.");
         }
         if (x == 7) {
-            System.out.println("H7: BOTTOM LIMIT SWITCH CUTS OFF WHILE RUNNING UP  ");
+            System.out.println("H7: BOTTOM LIMIT SWITCH CUTS OFF WHILE RUNNING UP");
             System.out.println("سنسور دورانداز پایین (817) در حین حرکت کابین به بالا  قطع شده است");
+            System.out.println("آهنربای قطع و وصل سنسور 817 را بررسی نمایید.");
+            System.out.println("تراول کابل مرتبط را بررسی نمایید.");
         }
         if (x == 8) {
             System.out.println("H8: LOW DC BUS VOLTAGE");
-            System.out.println("اDC BUSاز حد معین کاهش یافته است");
+            System.out.println("اDC BUS از حد معین کاهش یافته است");
+            System.out.println("-------------------------------------------");
+            System.out.println("ولتاژ اصلی L1,L2,L3 را بررسی نمایید.");
+            System.out.println("ولتاژ فاز به فاز L1,L2,L3 را بررسی نمایید.");
+            System.out.println("اهم مقاومت ترمز را بررسی نمایید.");
+            System.out.println("اتصالات مقاومت ترمز را بررسی نمایید.");
+            System.out.println("مقاومت ترمز را در جهت حرکت بالا بررسی نمایید.");
+            System.out.println("مسیر ترمینال B , P را دنبال کنید.");
         }
         if (x == 9) {
             System.out.println("H9: HIGH DC BUS VOLTAGE");
-            System.out.println("اDC BUSاز حد معین افزایش یافته است");
+            System.out.println("اDC BUS از حد معین افزایش یافته است");
+            System.out.println("--------------------------------------------");
+            System.out.println("ولتاژ اصلی L1,L2,L3 را بررسی نمایید.");
+            System.out.println("ولتاژ فاز به فاز L1,L2,L3 را بررسی نمایید.");
+            System.out.println("اهم مقاومت ترمز را بررسی نمایید.");
+            System.out.println("اتصالات مقاومت ترمز را بررسی نمایید.");
+            System.out.println("مقاومت ترمز را در جهت حرکت بالا بررسی نمایید.");
+            System.out.println("مسیر ترمینال B , P را دنبال کنید.");
         }
         if (x == 10) {
-            System.out.println("H10: KRC CHECK BACK ERROR  ");
+            System.out.println("H10: KRC CHECK BACK ERROR");
             System.out.println("خطای KRC");
+            System.out.println("--------------------------------------------------------------");
+            System.out.println("در حالت بی حرکتی کابین سیگنال KRC را بررسی نمایید، روشن باشد");
+            System.out.println("در حالت حرکت کابین سیگنال KRC را بررسی نمایید، خاموش باشد");
+            System.out.println("بررسی نمایید ورودی ترمینال KRC برابر با 24V باشد");
+            System.out.println("تیغه های NC کنتاکتورهای KFR1 & KFR2 را بررسی کنید.");
+            System.out.println("سیم کشی مسیر مرتبط به KRC را بررسی نمایید.");
         }
         if (x == 11) {
             System.out.println("H11: ML1 & ML2 SIGNALS SHORT  CIRCUIT TO EACH OTHER.");
             System.out.println("خطای ML1&ML2 هنگامی که اتصال کوتاه می شوند");
+            System.out.println("--------------------------------------------------------------");
+            System.out.println("سیگنال ML1 & ML2 را بررسی نمایید");
+            System.out.println("فاصله بین سنسورها و آهنربا را بررسی نمایید.");
+            System.out.println("سیم بندی سنسور با کارکدک را بررسی نمایید.");
+            System.out.println("سنسور و تراول کابل را بررسی نمایید.");
+            System.out.println("سیم LS برای liftsense را از تراول کابل جدا نمایید.");
         }
         if (x == 12) {
             System.out.println("H12: DOOR BRIDGING RELAYS SR1 & SR3  DONT PICK UP ");
