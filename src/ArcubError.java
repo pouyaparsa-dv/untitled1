@@ -111,38 +111,69 @@ public class ArcubError {
         if (x == 12) {
             System.out.println("H12: DOOR BRIDGING RELAYS SR1 & SR3  DONT PICK UP ");
             System.out.println("رله های SR1 & SR3 مربوط به ADO جذب نمی شوند");
+            //بررسی گردد؟؟؟
         }
         if (x == 13) {
             System.out.println("H13: DOOR BRIDGING RELAYS SR1 or SR3  DONT DROP  ");
             System.out.println("رله های SR1 یا SR3 مربوط به ADO بر نمی گردند");
+            //بررسی گردد؟؟؟
         }
         if (x == 14) {
             System.out.println("H14: DOOR BRIDGING DISABLED BUT 140P SIGNAL IS STILL EXIST  ");
-            System.out.println("اADO غیر فعال است اما سگنال 140P همچنان وجود دارد");
+            System.out.println("اADO غیر فعال است اما سیگنال 140P همچنان وجود دارد");
+            //بررسی گردد؟؟؟
         }
         if (x == 15) {
             System.out.println("H15: L1,  L2, L3 MAINS POWER SUPPLY FAILURE  ");
             System.out.println("ورودی L1-L2-L3 قطع شده است");
+            System.out.println("--------------------------------------------------------");
+            System.out.println("ولتاژ اصلی L1,L2,L3 را بررسی نمایید.");
+            System.out.println("ولتاژ فاز به فاز L1,L2,L3 را بررسی نمایید.");
+            System.out.println("در صورت صحیح بودن ولتاژها امکان خرابی دستگاه وجود دارد.");
         }
         if (x == 16) {
             System.out.println("H16: MOTOR CAN NOT SPIN IN  EVACUATION MODE");
             System.out.println("موتور در مد نجات اظطراری قادر به چرخیدن نیست");
+            System.out.println("---------------------------------------------------");
+            System.out.println("توان UPS و جریان باطری ها را بررسی نمایید.");
+            System.out.println("فک ترمز را بررسی نمایید.");
+            System.out.println("ولتاژ ترمز 840 و 2000 را بررسی نمایید.");
+            System.out.println("ولتاژ ترمینال ها ترمز را بررسی نمایید.");
+            System.out.println("بر اساس نوع سیم بندی پارامتر 8.2 را بررسی نمایید.");
         }
         if (x == 17) {
             System.out.println("H17: PTC SIGNAL OPEN. MOTOR OVER  HEATED");
             System.out.println("فعال شدن سیگنال PTC موتور، موتور بیش از حد داغ شده است");
+            System.out.println("-------------------------------------------------------------------------------------------------------");
+            System.out.println("وجود ترموستات مقاومت ترمز در مسیر T3 , T4 یا پل بودن آن را بررسی نمایید");
+            System.out.println("پارامتر 5.24 را بررسی نمایید.");
+            System.out.println("اPTC موتور را بررسی نمایید.");
+            System.out.println("دمای موتور را بررسی نمایید.");
+            System.out.println("حرارت موتور بررسی نمایید که طبیعی باشد.");
+            System.out.println("اT2,T را پل دهید، سیستم را نرمال رویزیون کنید اگر برطرف شد، PTC و سیم کشی آن به تابلو را بررسی نمایید.");
         }
         if (x == 18) {
             System.out.println("H18: DIPSWITCH CONFIGURATION  ERROR");
             System.out.println("خطای تنظیمات دیپ سوییچ");
+            System.out.println("----------------------------------------------");
+            System.out.println("جریان تابلو را بخوانید.");
+            System.out.println("حالت دیپ سوییچ را بر اساس آمپر بررسی نمایید.");
+            System.out.println("ورژن آپدیت را بررسی نمایید.");
+            System.out.println("مشکل سخت افزاری می باشد.");
+
         }
         if (x == 19) {
             System.out.println("H19: SAME GROUP ID NAME USED ON  CONTROLLERS");
             System.out.println("اسامی مشابه در شناسه گروهی استفاده شده است");
+            System.out.println("----------------------------------------------");
+            System.out.println("پارامتر 2.21 را در دو تابلو بررسی نمایید.");
         }
         if (x == 21) {
             System.out.println("H21: DRIVE OVER CURRENT ERROR");
             System.out.println("خطای جریان بیش از حد درایو");
+            System.out.println("--------------------------------------------------------");
+            System.out.println("بررسی نمایید توان درایو با توان موتور هم اندازه باشد.");
+            System.out.println("");
         }
         if (x == 22) {
 
