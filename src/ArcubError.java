@@ -171,12 +171,20 @@ public class ArcubError {
         if (x == 21) {
             System.out.println("H21: DRIVE OVER CURRENT ERROR");
             System.out.println("خطای جریان بیش از حد درایو");
-            System.out.println("--------------------------------------------------------");
+            System.out.println("-----------------------------------------------------------------------------");
             System.out.println("بررسی نمایید توان درایو با توان موتور هم اندازه باشد.");
-            System.out.println("");
+            System.out.println("سیم های U,V,W موتور بررسی نمایید.");
+            System.out.println("در موتورهای گیربکس در حالت حلقه باز مشکل وجود داست 5.17 و 5.19 بررسی نمایید.");
+            System.out.println("در صورت خطا فقط در حالت حلقه بسته در موتور گیربکس جهت انکودر را تغییر دهید.");
+            System.out.println("اتصالات الکتریکی و مکانیکی انکودر را بررسی نمایید.");
         }
         if (x == 22) {
-
+            System.out.println("H22: SERVICE TIME OVERFLOW");
+            System.out.println("زمان سرویس و نگهداری رسیده است.");
+            System.out.println("-----------------------------------------------");
+            System.out.println("فعال بودن آیتم 2.39 را بررسی نمایید.");
+            System.out.println("در صورت فعال بودن، آیتم 2.40 را افزایش دهید.");
+            System.out.println("در نهایت لیست خطاها را پاک نمایید.");
         }
         if (x == 23) {
 
